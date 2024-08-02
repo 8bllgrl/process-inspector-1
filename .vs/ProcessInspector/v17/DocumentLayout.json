@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c-sharp\\myproj\\ProcessInspector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D5FC42B-8973-416C-9D97-94AB05818D65}|ProcessInspector\\ProcessInspector.csproj|d:\\c-sharp\\myproj\\processinspector\\processinspector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D5FC42B-8973-416C-9D97-94AB05818D65}|ProcessInspector\\ProcessInspector.csproj|solutionrelative:processinspector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 276,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c-sharp\\myproj\\ProcessInspector\\ProcessInspector\\Program.cs",
+              "RelativeDocumentMoniker": "ProcessInspector\\Program.cs",
+              "ToolTip": "D:\\c-sharp\\myproj\\ProcessInspector\\ProcessInspector\\Program.cs",
+              "RelativeToolTip": "ProcessInspector\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBkAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T06:12:40.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 124,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

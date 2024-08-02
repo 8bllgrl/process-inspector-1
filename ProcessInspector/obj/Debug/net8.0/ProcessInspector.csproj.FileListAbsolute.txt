@@ -1,0 +1,15 @@
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\bin\Debug\net8.0\ProcessInspector.exe
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\bin\Debug\net8.0\ProcessInspector.deps.json
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\bin\Debug\net8.0\ProcessInspector.runtimeconfig.json
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\bin\Debug\net8.0\ProcessInspector.dll
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\bin\Debug\net8.0\ProcessInspector.pdb
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.GeneratedMSBuildEditorConfig.editorconfig
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.AssemblyInfoInputs.cache
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.AssemblyInfo.cs
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.csproj.CoreCompileInputs.cache
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.sourcelink.json
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.dll
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\refint\ProcessInspector.dll
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.pdb
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ProcessInspector.genruntimeconfig.cache
+D:\c-sharp\myproj\ProcessInspector\ProcessInspector\obj\Debug\net8.0\ref\ProcessInspector.dll
