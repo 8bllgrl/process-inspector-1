@@ -17,24 +17,12 @@ namespace ProcessInspector
             PEParser parser = new PEParser(processName);
 
             ProcessInfo processInfo = parser.ParseProcess();
+            processInfo.PrintProcessInfo();
 
-            if (processInfo != null)
-            {
-                Console.WriteLine($"Handle: {ProcessInfo.Handle}");
-                Console.WriteLine($"Base Address: {ProcessInfo.BaseAddress}");
-                Console.WriteLine($"PE Header Address: {ProcessInfo.PEHeaderAddress}");
-                Console.WriteLine($"Number of Sections: {ProcessInfo.NumberOfSections}");
-                Console.WriteLine($"Optional Header Size: {ProcessInfo.OptionalHeaderSize}");
-                Console.WriteLine($"Text Section Start: {ProcessInfo.TextSectionStart}");
-                Console.WriteLine($"Text Section End: {ProcessInfo.TextSectionEnd}");
-                Console.WriteLine($"Data Section Start: {ProcessInfo.DataSectionStart}");
-                Console.WriteLine($"Data Section End: {ProcessInfo.DataSectionEnd}");
-                Console.WriteLine($"Is 32-Bit Process: {ProcessInfo.Is32BitProcess}");
-            }
-            else
-            {
-                Console.WriteLine("Failed to parse process information.");
-            }
+            // find current target and print out details
+            SignatureScanner signatureScanner = new SignatureScanner();
+            AddressService addressService = new AddressService(signatureScanner);
+
         }
     }
 }

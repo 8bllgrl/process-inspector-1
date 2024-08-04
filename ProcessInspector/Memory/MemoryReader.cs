@@ -29,5 +29,35 @@ namespace ProcessInspector.Memory
 
             return ReadProcessMemory(ProcessInfo.Handle, address, buffer, size, out _);
         }
+
+        public static T Read<T>(IntPtr processHandle, IntPtr address) where T : struct
+        {
+            // Implement the logic to read memory based on the type T.
+            // For simplicity, using Marshal here.
+            byte[] buffer = new byte[Marshal.SizeOf(typeof(T))];
+            ReadProcessMemory(processHandle, address, buffer, buffer.Length, out _);
+            GCHandle handle = GCHandle.Alloc(buffer, GCHandleType.Pinned);
+            T result = Marshal.PtrToStructure<T>(handle.AddrOfPinnedObject());
+            handle.Free();
+            return result;
+        }
+
+        public static string ReadStringFromMemory(IntPtr processHandle, IntPtr address, int maxLength = 200)
+        {
+            byte[] buffer = new byte[maxLength];
+            int bytesRead;
+
+            if (ReadProcessMemory(processHandle, address, buffer, buffer.Length, out bytesRead))
+            {
+                return Encoding.ASCII.GetString(buffer, 0, bytesRead).TrimEnd('\0');
+            }
+            else
+            {
+                throw new Exception("Failed to read process memory.");
+            }
+        }
+
+
+
     }
 }

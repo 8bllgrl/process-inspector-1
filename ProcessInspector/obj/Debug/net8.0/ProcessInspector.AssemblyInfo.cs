@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProcessInspector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ceae1214000dfdecd494ad896dd421bb4259f866")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProcessInspector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProcessInspector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

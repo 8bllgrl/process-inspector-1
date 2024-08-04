@@ -14,6 +14,17 @@ namespace ProcessInspector.Memory
     {
         Process _targetProcess;
 
+        public PEParser(String processName)
+        {
+            _targetProcess = GetProcessByName(processName);
+            if (_targetProcess == null)
+            {
+                Console.WriteLine("No processes with the specified name found.");
+                return;
+            }
+
+        }
+
         public ProcessInfo ParseProcess()
         {
             if (_targetProcess == null)
@@ -69,17 +80,6 @@ namespace ProcessInspector.Memory
             return sectionHeadersAddress;
         }
 
-        public PEParser(String processName)
-        {
-            _targetProcess = GetProcessByName(processName);
-            if (_targetProcess == null)
-            {
-                Console.WriteLine("No processes with the specified name found.");
-                return;
-            }
-
-        }
-
         private static Process GetProcessByName(string name)
         {
             Process[] processes = Process.GetProcessesByName(name);
@@ -103,8 +103,6 @@ namespace ProcessInspector.Memory
             return BitConverter.ToInt16(peHeader, 20);
         }
 
-        [DllImport("kernel32.dll", SetLastError = true)]
-        static extern IntPtr OpenProcess(uint processAccess, bool bInheritHandle, int processId);
 
         private IntPtr FindHandle(Process targetProcess)
         {
@@ -128,9 +126,6 @@ namespace ProcessInspector.Memory
                 return false;
             }
         }
-        [DllImport("kernel32.dll", SetLastError = true, CallingConvention = CallingConvention.Winapi)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool IsWow64Process([In] IntPtr process, [Out] out bool wow64Process);
 
         private bool IsProcess32Bit(Process targetProcess)
         {
@@ -198,6 +193,13 @@ namespace ProcessInspector.Memory
             return sectionStartPointer.ToInt64() - baseAddress.ToInt64();
         }
 
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        static extern IntPtr OpenProcess(uint processAccess, bool bInheritHandle, int processId);
+
+        [DllImport("kernel32.dll", SetLastError = true, CallingConvention = CallingConvention.Winapi)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool IsWow64Process([In] IntPtr process, [Out] out bool wow64Process);
 
     }
     class SectionInfo
